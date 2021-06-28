@@ -23,7 +23,7 @@ class CourseCog(Cog):
 
         # get course channel
         channel = self.bot.get_channel(int(COURSE_CHANNEL_ID))
-        messages = await channel.history(limit=50).flatten()
+        messages = await channel.history(limit=500).flatten()
 
         all_questions = []
         for msg in messages:
@@ -36,7 +36,7 @@ class CourseCog(Cog):
                 description="Here are all the questions asked in the #course-selection channel:",
                 color=0xF1948A
             )
-            for index, question in enumerate(all_questions):
+            for index, question in enumerate(all_questions[::-1]):
                 embed.add_field(
                     name = 'Q' + str(index+1) + '.',
                     value = question.strip(),
