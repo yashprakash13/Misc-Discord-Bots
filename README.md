@@ -1,4 +1,4 @@
-# Misc-Discord-Bots
+# Miscellaneous Discord Bots
 A list of all discord bots that I design for various communities
 
 <img src="https://img.shields.io/badge/Built - with Discord.py-orange?style=for-the-badge" alt="Library Built With">
